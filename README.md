@@ -1,5 +1,17 @@
 <a href="https://book.the-turing-way.org/welcome.html"><img src="https://static.dw.com/image/62054308_1004.webp" width="500" align="Right" /></a>
 
+```sh
+      1. Probabilistic
+                      \
+  2. Neuronetworks -> 4. Central -> 5. Algorithms -> Deterministic
+                      /
+                      3. Graphical
+```
+
+### Linear: Dionysus 1, 2, 3
+### Categorical: Sing O Muse 4
+### Binary: Apollo 5, 6
+
 # _Oscar Wilde_
 
 ```sh
