@@ -17,6 +17,12 @@
 ## Binary 5, 6
 - Truth; `friendship`, [ethics](https://www.youtube.com/watch?v=GLpbh5d3Hhg): Judeo-Christian
 
+                 1. Probabilistic
+                                 \
+             2. Neuronetworks -> 4. Central -> 5. Algorithms -> 6. Deterministic
+                                 /
+                                 3. Graphical 
+
 ```{figure} ./self-criticism.png
 ---
 width: 1000px
