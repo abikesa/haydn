@@ -2,7 +2,7 @@
 
                            1. Meaning
                                      \
-                      2. Patterns -> 4. Values -> 5. Identity -> 6. Achievements
+                      2. Patterns -> 4. Values -> 5. Identity -> 6. Recognition
                                      /
                                      3. Consequences 
             
