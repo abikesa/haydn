@@ -381,7 +381,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -397,6 +399,40 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposal-to-develop-advanced-database-analysis-courses-unlocking-nhanes-and-beyond"><strong>Proposal to Develop Advanced Database Analysis Courses: Unlocking NHANES and Beyond</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subject-developing-innovative-courses-on-national-dataset-analysis-using-nhanes-as-a-case-study"><strong>Subject:</strong> Developing Innovative Courses on National Dataset Analysis Using NHANES as a Case Study</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-context"><strong>Background and Context</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-opportunity-nhanes-as-a-case-study"><strong>The Opportunity: NHANES as a Case Study</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-nhanes"><strong>Why NHANES?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-in-teaching"><strong>Applications in Teaching</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposal-course-development-and-delivery"><strong>Proposal: Course Development and Delivery</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#program-overview"><strong>Program Overview</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teaching-tools"><strong>Teaching Tools</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-timeline"><strong>Implementation Timeline</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-year"><strong>2025–2026 Academic Year</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-to-the-department-of-epidemiology"><strong>Benefits to the Department of Epidemiology</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-impact"><strong>Educational Impact</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-impact"><strong>Research Impact</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#institutional-impact"><strong>Institutional Impact</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusion</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-visualizations-for-the-jupyterbook"><strong>Suggested Visualizations for the JupyterBook</strong></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -408,19 +444,173 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="system">
 <h1>System<a class="headerlink" href="#system" title="Permalink to this heading">#</a></h1>
-<p>In the quest to bridge monumental ends with clarity and balance, informed consent emerges as a cornerstone—not merely as a bureaucratic ritual mandated by Institutional Review Boards (IRBs) but as a profound ethos that defines the interaction between science and humanity. The app we’ve developed steps into this space with an audacity that reshapes the landscape: it allows the sharing of Stata scripts among researchers with IRB approvals while maintaining zero disclosure risk. The exchange is stripped to its essence—a beta coefficient vector and variance-covariance matrix—removing the need for complex IRB reviews. Most critically, the app places the informed consent process directly into the hands of prospective donors, embodying a paradigm shift that transcends institutional inertia.</p>
-<p><strong>Monumental Ends: Informed Consent as an Apollo Principle</strong></p>
-<p>When viewed through the lens of the monumental, informed consent assumes a dual role: as an end goal (clarity of risk and benefit) and as an embodiment of the Apollo archetype, representing reason, transparency, and the light of understanding. Traditional rituals of obtaining consent often descend into tokenized processes, adhering strictly to the requirements of GTPCI (Good Translational Practice for Clinical Investigations) but neglecting the lived reality of donors. The app redefines this interaction, empowering donors with granular information—risk coefficients, predictive intervals, and individualized projections. It embodies not just the spirit of compliance but the very ethos IRBs should aspire to. The result? A process that is transparent, empowering, and devoid of opacity.</p>
-<p>Imagine an 84-year-old prospective donor, engaging with the app to see not just a generic risk assessment but a personalized narrative—built from decades of follow-up data and imbued with the confidence intervals that reflect both our knowledge and its boundaries. This isn’t ritualistic; it’s transformative.</p>
-<p><strong>Critical Updates: Personalization and Transparency as Athena’s Ethos</strong></p>
-<p>The critical updates ushered in by this app align with the ethos of Athena: wisdom, strategy, and iterative learning. The canvas is open—not a static, ossified system, but a dynamic, evolving interface that adapts to the needs of a generation steeped in transparency. Gen Z, with its demand for authenticity and iterative improvement, finds resonance here. The app does not merely present static data; it evolves with its users, offering personalized insights that grow sharper as the datasets expand.</p>
-<p>Perhaps its most revolutionary feature is the ability to preserve anonymity while delivering tailored insights. By providing parameter matrices without raw data, it obliterates disclosure risk while maintaining statistical integrity. For the donor, this means clarity without compromise; for the researcher, it’s collaboration without conflict.</p>
-<p><strong>Antiquarian Means: Honoring Tradition While Innovating</strong></p>
-<p>Our means remain anchored in the antiquarian—the steady, reflective tradition of examining nondonor control populations and building on established foundations. The app’s ethos aligns with the legacy of works like Segev JAMA 2010 and expands upon it with the precision of modern neural networks. These networks don’t merely analyze; they narrate, weaving a tapestry from inputs as diverse as stress, apathy, and resilience. Yet, we avoid the trap of reinvention for its own sake. Instead, we iterate thoughtfully, crafting a narrative that respects its lineage.</p>
-<p>Consider the neural network visualization embedded in this project. Each node—from “Life” and “Earth” in the Pre-Input layer to “Training” and “Relaxation” in the Hidden layer—carries the weight of its connections. The colors—light green for antiquarian steadiness, pale turquoise for monumental firmness—symbolize the delicate balance between tradition and progress. The output—“Challenge,” “Skill,” “Calibration”—reflects the equilibrium we strive for: a system that not only predicts but also adapts, embodying resilience at every level.</p>
-<p><strong>A New Ethos for Science and Society</strong></p>
-<p>This project isn’t just an app; it’s a manifesto for how science can engage with society. It moves beyond compliance, beyond the ritualistic box-checking that has so often stifled innovation. By placing informed consent directly in the hands of those who matter most—the donors themselves—it transforms a static ritual into a dynamic dialogue. It’s not merely about risk; it’s about trust, empowerment, and clarity. In doing so, it honors the monumental (Apollo), embraces the critical (Athena), and respects the antiquarian (The School of Athens).</p>
-<p>As we look ahead, the path is clear: to continue iterating, evolving, and refining. To challenge the inertia of tradition without discarding its wisdom. And above all, to ensure that every donor, every researcher, and every stakeholder finds clarity, balance, and purpose in this new era of informed consent.</p>
+<section id="proposal-to-develop-advanced-database-analysis-courses-unlocking-nhanes-and-beyond">
+<h2><strong>Proposal to Develop Advanced Database Analysis Courses: Unlocking NHANES and Beyond</strong><a class="headerlink" href="#proposal-to-develop-advanced-database-analysis-courses-unlocking-nhanes-and-beyond" title="Permalink to this heading">#</a></h2>
+<p><strong>To:</strong> Dr. Shruti Mehta, Chair, Department of Epidemiology<br />
+<strong>From:</strong> [Your Name], Assistant Professor of Surgery, Johns Hopkins School of Medicine</p>
+<section id="subject-developing-innovative-courses-on-national-dataset-analysis-using-nhanes-as-a-case-study">
+<h3><strong>Subject:</strong> Developing Innovative Courses on National Dataset Analysis Using NHANES as a Case Study<a class="headerlink" href="#subject-developing-innovative-courses-on-national-dataset-analysis-using-nhanes-as-a-case-study" title="Permalink to this heading">#</a></h3>
+<hr class="docutils" />
+</section>
+</section>
+<section id="background-and-context">
+<h2><strong>Background and Context</strong><a class="headerlink" href="#background-and-context" title="Permalink to this heading">#</a></h2>
+<p>Dr. Mehta, I am writing to formally propose the development of a groundbreaking series of courses on database analysis that leverages NHANES as a foundational case study. This initiative builds on our prior successes during my postdoctoral fellowship in the Department of Epidemiology with Dr. Greg Kirk, where your mentorship played a pivotal role.</p>
+<ul class="simple">
+<li><p><strong>NHANES in Your Work</strong>: Your own doctoral thesis used NHANES data, underscoring its power as a resource for generating impactful hypotheses and advancing public health.</p></li>
+<li><p><strong>Our Collaborative Success</strong>: A brief conversation with you during that time resulted in <em>Segev et al., JAMA 2010</em>, likely your second most cited paper to date. The speed and precision of that project remain a benchmark of efficiency and collaboration.</p></li>
+<li><p><strong>Building on Success</strong>: My most-cited paper (<em>Muzaleh et al., JAMA 2014</em>), which examined living kidney donor outcomes, is a direct sequel to <em>Segev et al.</em>. The methodologies and insights from these works have been distilled into an app I’ve developed, and I aim to use this as a teaching tool to decode the lessons for future students.</p></li>
+</ul>
+<p>The demand for courses teaching fluency with national datasets has been clearly articulated. Both <strong>Colleen Hanran</strong> and <strong>Tanjala Purnell</strong> approached me two years ago to explore ways to equip Epidemiology graduate students with this vital skill set. This proposal directly responds to their request while creating a scalable and innovative program for the Department of Epidemiology.</p>
+<hr class="docutils" />
+</section>
+<section id="the-opportunity-nhanes-as-a-case-study">
+<h2><strong>The Opportunity: NHANES as a Case Study</strong><a class="headerlink" href="#the-opportunity-nhanes-as-a-case-study" title="Permalink to this heading">#</a></h2>
+<section id="why-nhanes">
+<h3><strong>Why NHANES?</strong><a class="headerlink" href="#why-nhanes" title="Permalink to this heading">#</a></h3>
+<p>NHANES is unparalleled in its scope and utility:</p>
+<ul class="simple">
+<li><p><strong>Longitudinal Depth</strong>: Over 30 years of continuous data (since 1988), linked to outcomes like mortality and ESRD.</p></li>
+<li><p><strong>Breadth of Variables</strong>: Over 3,000–4,000 variables covering questionnaires, physical exams, labs, and imaging.</p></li>
+<li><p><strong>Interdisciplinary Applications</strong>: Relevant to nephrology, cardiovascular medicine, nutrition, health disparities, and public health.</p></li>
+</ul>
+</section>
+<section id="applications-in-teaching">
+<h3><strong>Applications in Teaching</strong><a class="headerlink" href="#applications-in-teaching" title="Permalink to this heading">#</a></h3>
+<p>Using NHANES as a case study, we can:</p>
+<ol class="arabic simple">
+<li><p>Teach students <strong>multivariable regression</strong>, <strong>visualization</strong>, and <strong>hypothesis generation</strong> using real-world data.</p></li>
+<li><p>Train students to analyze publicly available datasets through <strong>scripts in Python, R, and Stata</strong>, creating outputs without direct IRB access.</p></li>
+<li><p>Emphasize <strong>reverse engineering</strong>: Students can dissect the app’s workflows and methodologies, demystifying advanced database analysis.</p></li>
+</ol>
+<p>NHANES is the gateway, but this framework will expand to other datasets like USRDS (United States Renal Data System) and NIS (National Inpatient Sample), further enriching the curriculum.</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="proposal-course-development-and-delivery">
+<h2><strong>Proposal: Course Development and Delivery</strong><a class="headerlink" href="#proposal-course-development-and-delivery" title="Permalink to this heading">#</a></h2>
+<section id="program-overview">
+<h3><strong>Program Overview</strong><a class="headerlink" href="#program-overview" title="Permalink to this heading">#</a></h3>
+<p>This proposal outlines a comprehensive, tiered series of courses under the banner <strong>PAIRS at J-H</strong> (<em>P</em>ython, <em>A</em>I, <em>R</em>, and <em>S</em>tata at Johns Hopkins).</p>
+<ol class="arabic simple">
+<li><p><strong>Basic Level</strong></p>
+<ul class="simple">
+<li><p>Introduction to national datasets (NHANES, USRDS, NIS).</p></li>
+<li><p>Fundamentals of multivariable regression and data visualization.</p></li>
+<li><p>Basic Stata and Python scripting.</p></li>
+</ul>
+</li>
+<li><p><strong>Intermediate Level</strong></p>
+<ul class="simple">
+<li><p>Advanced regression techniques, including interaction terms and time-to-event analyses.</p></li>
+<li><p>Building reproducible scripts in Python and R.</p></li>
+<li><p>Creating simple apps using Jupyter notebooks and hosting them on GitHub Pages.</p></li>
+</ul>
+</li>
+<li><p><strong>Advanced Level</strong></p>
+<ul class="simple">
+<li><p>Developing full-fledged interactive apps integrating AI, informed consent operationalization, and personalized risk estimation.</p></li>
+<li><p>Reverse engineering workflows for real-world applications.</p></li>
+<li><p>Advanced topics in electronic medical record data extraction using language models.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="teaching-tools">
+<h3><strong>Teaching Tools</strong><a class="headerlink" href="#teaching-tools" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>The JupyterBook Platform</strong>:</p>
+<ul class="simple">
+<li><p>A central hub for all course materials, including notes, scripts, apps, and visualizations.</p></li>
+<li><p>Interactive sections showcasing app functionalities, including risk modeling and real-time simulations.</p></li>
+</ul>
+</li>
+<li><p><strong>Real-World Case Studies</strong>:</p>
+<ul class="simple">
+<li><p>NHANES: Mortality and ESRD outcomes.</p></li>
+<li><p>USRDS: Nephrology-focused analysis of ESRD prevalence and treatment outcomes.</p></li>
+<li><p>NIS: Utilization and cost-effectiveness in inpatient care.</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+</section>
+</section>
+<section id="implementation-timeline">
+<h2><strong>Implementation Timeline</strong><a class="headerlink" href="#implementation-timeline" title="Permalink to this heading">#</a></h2>
+<section id="academic-year">
+<h3><strong>2025–2026 Academic Year</strong><a class="headerlink" href="#academic-year" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Curriculum Development</strong> (Spring 2025):</p>
+<ul class="simple">
+<li><p>Design course content and workflows, starting with NHANES.</p></li>
+<li><p>Create JupyterBook resources and app demonstrations.</p></li>
+</ul>
+</li>
+<li><p><strong>Pilot Courses</strong> (Fall 2025):</p>
+<ul class="simple">
+<li><p>Launch <strong>PAIRS at J-H</strong> (Basic and Intermediate Levels).</p></li>
+<li><p>Integrate NHANES data as the foundation for teaching scripts and app development.</p></li>
+</ul>
+</li>
+<li><p><strong>Expansion</strong> (Spring 2026):</p>
+<ul class="simple">
+<li><p>Add Advanced Level courses.</p></li>
+<li><p>Expand datasets to include USRDS, NIS, and others.</p></li>
+</ul>
+</li>
+<li><p><strong>Scalability</strong>:</p>
+<ul class="simple">
+<li><p>Open courses to students across disciplines, including medicine, public health, and data science.</p></li>
+<li><p>Develop online modules for broader dissemination.</p></li>
+</ul>
+</li>
+</ol>
+<hr class="docutils" />
+</section>
+</section>
+<section id="benefits-to-the-department-of-epidemiology">
+<h2><strong>Benefits to the Department of Epidemiology</strong><a class="headerlink" href="#benefits-to-the-department-of-epidemiology" title="Permalink to this heading">#</a></h2>
+<section id="educational-impact">
+<h3><strong>Educational Impact</strong><a class="headerlink" href="#educational-impact" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Establish the Department of Epidemiology as a leader in database analysis education.</p></li>
+<li><p>Train students in skills critical to public health and clinical research.</p></li>
+<li><p>Provide an innovative model for integrating AI, data science, and real-world datasets.</p></li>
+</ul>
+</section>
+<section id="research-impact">
+<h3><strong>Research Impact</strong><a class="headerlink" href="#research-impact" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Leverage NHANES, USRDS, and NIS to generate high-impact publications and policy insights.</p></li>
+<li><p>Enable faculty and students to explore novel hypotheses with cutting-edge tools.</p></li>
+</ul>
+</section>
+<section id="institutional-impact">
+<h3><strong>Institutional Impact</strong><a class="headerlink" href="#institutional-impact" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Strengthen Johns Hopkins’ reputation for innovation in public health education.</p></li>
+<li><p>Attract top-tier students and faculty through advanced, interdisciplinary offerings.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+<section id="conclusion">
+<h2><strong>Conclusion</strong><a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h2>
+<p>This proposal builds on decades of collaborative success, from our work on <em>Segev JAMA 2010</em> to my ongoing development of an app that encodes the lessons learned in medicine, surgery, and epidemiology. By leveraging NHANES as a case study, we can create transformative educational experiences that prepare students for the future of research and public health.</p>
+<p>I would welcome the opportunity to discuss this proposal further and begin implementing these courses with your guidance and support.</p>
+<hr class="docutils" />
+</section>
+<section id="suggested-visualizations-for-the-jupyterbook">
+<h2><strong>Suggested Visualizations for the JupyterBook</strong><a class="headerlink" href="#suggested-visualizations-for-the-jupyterbook" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Interactive Flowchart</strong>: Mapping the workflow from dataset access to app outputs, highlighting the roles of students and collaborators.</p></li>
+<li><p><strong>Live App Demonstrations</strong>: Embedding interactive apps to showcase personalized risk estimation and regression analyses.</p></li>
+<li><p><strong>Data Exploration Dashboard</strong>: Allowing users to visualize NHANES data distributions and outcomes in real time.</p></li>
+</ol>
+<p>Please let me know how best to move forward with this proposal. I am confident it will serve as a transformative initiative for the Department of Epidemiology.</p>
+<p>Sincerely,<br />
+[Your Name]</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -559,6 +749,7 @@ document.write(`
 </div>
 </div>
 </section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -614,6 +805,47 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposal-to-develop-advanced-database-analysis-courses-unlocking-nhanes-and-beyond"><strong>Proposal to Develop Advanced Database Analysis Courses: Unlocking NHANES and Beyond</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#subject-developing-innovative-courses-on-national-dataset-analysis-using-nhanes-as-a-case-study"><strong>Subject:</strong> Developing Innovative Courses on National Dataset Analysis Using NHANES as a Case Study</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-context"><strong>Background and Context</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-opportunity-nhanes-as-a-case-study"><strong>The Opportunity: NHANES as a Case Study</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-nhanes"><strong>Why NHANES?</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-in-teaching"><strong>Applications in Teaching</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proposal-course-development-and-delivery"><strong>Proposal: Course Development and Delivery</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#program-overview"><strong>Program Overview</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#teaching-tools"><strong>Teaching Tools</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-timeline"><strong>Implementation Timeline</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#academic-year"><strong>2025–2026 Academic Year</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#benefits-to-the-department-of-epidemiology"><strong>Benefits to the Department of Epidemiology</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#educational-impact"><strong>Educational Impact</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#research-impact"><strong>Research Impact</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#institutional-impact"><strong>Institutional Impact</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion"><strong>Conclusion</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#suggested-visualizations-for-the-jupyterbook"><strong>Suggested Visualizations for the JupyterBook</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
