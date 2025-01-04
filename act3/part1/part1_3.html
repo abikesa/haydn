@@ -442,11 +442,12 @@ document.write(`
 <hr class="docutils" />
 <section id="fisher-information-and-personalized-combinatorial-space">
 <h3><strong>Fisher Information and Personalized Combinatorial Space</strong><a class="headerlink" href="#fisher-information-and-personalized-combinatorial-space" title="Permalink to this heading">#</a></h3>
-<p>Fisher Information, <span class="math notranslate nohighlight">\(\mathcal{I}(\theta)\)</span>, for a parameter <span class="math notranslate nohighlight">\(\theta\)</span> is mathematically defined as:<br />
-$<span class="math notranslate nohighlight">\(
+<p>Fisher Information, <span class="math notranslate nohighlight">\(\mathcal{I}(\theta)\)</span>, for a parameter <span class="math notranslate nohighlight">\(\theta\)</span> is mathematically defined as:</p>
+<div class="math notranslate nohighlight">
+\[
 \mathcal{I}(\theta) = -\mathbb{E} \left[ \frac{\partial^2}{\partial \theta^2} \log L(\theta) \right]
-\)</span><span class="math notranslate nohighlight">\(  
-where \)</span>L(\theta)<span class="math notranslate nohighlight">\( is the likelihood function of the observed data given the parameter \)</span>\theta<span class="math notranslate nohighlight">\(. Intuitively, it measures how sensitive the likelihood function is to changes in \)</span>\theta<span class="math notranslate nohighlight">\(, with higher values indicating greater precision in estimating \)</span>\theta$.</p>
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(L(\theta)\)</span> is the likelihood function of the observed data given the parameter <span class="math notranslate nohighlight">\(\theta\)</span>. Intuitively, it measures how sensitive the likelihood function is to changes in <span class="math notranslate nohighlight">\(\theta\)</span>, with higher values indicating greater precision in estimating <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 <p>In our app, personalized estimates are derived from a <strong>covariate vector</strong> (<span class="math notranslate nohighlight">\(\mathbf{x}\)</span>) and a <strong>variance-covariance matrix</strong> (<span class="math notranslate nohighlight">\(\Sigma\)</span>):<br />
 $<span class="math notranslate nohighlight">\(
 \hat{y} = \mathbf{x}^\top \beta
