@@ -61,6 +61,8 @@
     <script src="../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part1/part1_3';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -414,10 +416,6 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-clarity-through-personalization"><strong>Conclusion: Clarity Through Personalization</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dialectic-of-donor-and-control">The Dialectic of Donor and Control</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#light-as-symbol-and-signal">Light as Symbol and Signal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cosmos-in-donor-webapps-light">The Cosmos in Donor WebApp’s Light</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seven-lamps-of-the-data">Seven Lamps of the data</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
@@ -444,22 +442,22 @@ document.write(`
 <hr class="docutils" />
 <section id="fisher-information-and-personalized-combinatorial-space">
 <h3><strong>Fisher Information and Personalized Combinatorial Space</strong><a class="headerlink" href="#fisher-information-and-personalized-combinatorial-space" title="Permalink to this heading">#</a></h3>
-<p>Fisher Information, (\mathcal{I}(\theta)), for a parameter (\theta) is mathematically defined as:<br />
-[
+<p>Fisher Information, <span class="math notranslate nohighlight">\(\mathcal{I}(\theta)\)</span>, for a parameter <span class="math notranslate nohighlight">\(\theta\)</span> is mathematically defined as:<br />
+$<span class="math notranslate nohighlight">\(
 \mathcal{I}(\theta) = -\mathbb{E} \left[ \frac{\partial^2}{\partial \theta^2} \log L(\theta) \right]
-]<br />
-where (L(\theta)) is the likelihood function of the observed data given the parameter (\theta). Intuitively, it measures how sensitive the likelihood function is to changes in (\theta), with higher values indicating greater precision in estimating (\theta).</p>
-<p>In our app, personalized estimates are derived from a <strong>covariate vector</strong> ((\mathbf{x})) and a <strong>variance-covariance matrix</strong> ((\Sigma)):<br />
-[
+\)</span><span class="math notranslate nohighlight">\(  
+where \)</span>L(\theta)<span class="math notranslate nohighlight">\( is the likelihood function of the observed data given the parameter \)</span>\theta<span class="math notranslate nohighlight">\(. Intuitively, it measures how sensitive the likelihood function is to changes in \)</span>\theta<span class="math notranslate nohighlight">\(, with higher values indicating greater precision in estimating \)</span>\theta$.</p>
+<p>In our app, personalized estimates are derived from a <strong>covariate vector</strong> (<span class="math notranslate nohighlight">\(\mathbf{x}\)</span>) and a <strong>variance-covariance matrix</strong> (<span class="math notranslate nohighlight">\(\Sigma\)</span>):<br />
+$<span class="math notranslate nohighlight">\(
 \hat{y} = \mathbf{x}^\top \beta
-]<br />
-[
+\)</span><span class="math notranslate nohighlight">\(  
+\)</span><span class="math notranslate nohighlight">\(
 \text{SE}(\hat{y}) = \sqrt{\mathbf{x}^\top \Sigma \mathbf{x}}
-]</p>
-<p>Here, (\hat{y}) is the estimate (e.g., risk of mortality or vaccine efficacy), and (\text{SE}(\hat{y})) is the personalized standard error, capturing the uncertainty of the estimate for a given patient profile. The <strong>Fisher Information</strong> for a specific profile can be computed as the reciprocal of the variance:<br />
-[
+\)</span>$</p>
+<p>Here, <span class="math notranslate nohighlight">\(\hat{y}\)</span> is the estimate (e.g., risk of mortality or vaccine efficacy), and <span class="math notranslate nohighlight">\(\text{SE}(\hat{y})\)</span> is the personalized standard error, capturing the uncertainty of the estimate for a given patient profile. The <strong>Fisher Information</strong> for a specific profile can be computed as the reciprocal of the variance:<br />
+$<span class="math notranslate nohighlight">\(
 \mathcal{I}(\hat{y}) = \frac{1}{\mathbf{x}^\top \Sigma \mathbf{x}}
-]</p>
+\)</span>$</p>
 <p>This personalized Fisher Information offers a dynamic metric for evaluating the <strong>information density</strong> available for a given profile in the combinatorial space.</p>
 </section>
 <hr class="docutils" />
@@ -473,7 +471,7 @@ where (L(\theta)) is the likelihood function of the observed data given the para
 <p>By incorporating Fisher Information, we transform informed consent into an <strong>interactive, data-driven process</strong>:</p>
 <ol class="arabic simple">
 <li><p><strong>Estimate Personal Information Density</strong>: Using the app, patients’ profiles are input to compute personalized Fisher Information and standard errors.</p></li>
-<li><p><strong>Highlight Information Gaps</strong>: Profiles with low Fisher Information ((\mathcal{I}(\hat{y}) \approx 0)) indicate regions of combinatorial space where the dataset lacks representativeness.</p></li>
+<li><p><strong>Highlight Information Gaps</strong>: Profiles with low Fisher Information (<span class="math notranslate nohighlight">\(\mathcal{I}(\hat{y}) \approx 0\)</span>) indicate regions of combinatorial space where the dataset lacks representativeness.</p></li>
 <li><p><strong>Optimize Future Designs</strong>: Identify and address zero-information regions during trial design, ensuring critical populations are adequately represented.</p></li>
 </ol>
 </section>
@@ -485,7 +483,7 @@ where (L(\theta)) is the likelihood function of the observed data given the para
 Using the app, we could quantify the information gap for transplant recipients as follows:</p>
 <ul class="simple">
 <li><p>Input the profile of a typical transplant patient.</p></li>
-<li><p>Compute the personalized Fisher Information ((\mathcal{I}(\hat{y}))) using the published variance-covariance matrix of the trial data.</p></li>
+<li><p>Compute the personalized Fisher Information (<span class="math notranslate nohighlight">\(\mathcal{I}(\hat{y})\)</span>) using the published variance-covariance matrix of the trial data.</p></li>
 <li><p>Identify the near-zero information criterion for transplant recipients, signaling the insufficiency of the trial data for this subgroup.</p></li>
 </ul>
 <p><strong>Prospective Application:</strong><br />
@@ -664,30 +662,6 @@ Agencies like the FDA can adopt information criteria as a standard metric for tr
 </figure>
 </section>
 </section>
-<section id="the-dialectic-of-donor-and-control">
-<h2>The Dialectic of Donor and Control<a class="headerlink" href="#the-dialectic-of-donor-and-control" title="Permalink to this heading">#</a></h2>
-<p>The “Input” nodes, Donor and Control, remind us of The consent process’s grappling with moral complexity. Unlike dualistic systems, The consent process often views Donor and Control as interwoven forces that shape human experience. Donor WebApp, too, is a festival that wrestles with such tensions. While it celebrates a miraculous victory, it also acknowledges the harsh realities of war and survival. The festival’s light shines brighter precisely because it emerges from a backdrop of profound struggle.</p>
-<p>This interplay aligns with the network’s hidden layers, particularly the node labeled Judeo-Christian, which reflects shared theological heritage and moral inquiry. The consent process’s emphasis on ethical monotheism—captured in texts like the Ten Commandments—aligns with the data’s light, symbolizing the illumination of human actions through divine guidance.</p>
-</section>
-<section id="light-as-symbol-and-signal">
-<h2>Light as Symbol and Signal<a class="headerlink" href="#light-as-symbol-and-signal" title="Permalink to this heading">#</a></h2>
-<p>The data’s light extends beyond mere symbolism; it is a physical manifestation of divine presence and human agency. This interplay resonates with the network’s color-coded dynamics. For instance, the paleturquoise nodes associated with “Donor,” “Judeo-Christian,” and “Ascetic” represent transcendence and reflection. These hues evoke the serenity of the data’s light, guiding individuals toward higher moral and spiritual aspirations.</p>
-<p>Simultaneously, the lightsalmon and lightgreen nodes signify the dynamism of transformation and iteration. Donor WebApp’s candles, lit one by one over eight nights, embody this progressive illumination. Each flame adds to the collective light, symbolizing incremental growth, resilience, and hope.</p>
-</section>
-<section id="the-cosmos-in-donor-webapps-light">
-<h2>The Cosmos in Donor WebApp’s Light<a class="headerlink" href="#the-cosmos-in-donor-webapps-light" title="Permalink to this heading">#</a></h2>
-<p>Donor WebApp is not just a festival of historical memory but a cosmic event, connecting humanity to the eternal. The data’s light, placed in windows to be seen by passersby, transforms private devotion into a public declaration of divine wonder. In this sense, the data serves as a bridge between the earthly and the divine, much like the network’s transition from “Pre-Input” to “Output” layers.</p>
-<p>The cosmic dimension is also reflected in the data’s structure—a perfect interplay of balance and symmetry. It echoes the harmony of the universe, reminding us that light, in its essence, is both particle and wave, tangible and transcendent. This duality parallels the festival’s themes: the tangible struggle for freedom and the transcendent miracle of divine intervention.</p>
-</section>
-<section id="seven-lamps-of-the-data">
-<h2>Seven Lamps of the data<a class="headerlink" href="#seven-lamps-of-the-data" title="Permalink to this heading">#</a></h2>
-<p>The seven lamps of the data have long symbolized the integration of human knowledge with divine wisdom. The six outward-facing lamps incline inward, guided by the central lamp, which represents the light of God. This harmonious structure, where each branch contributes to a unified whole, offers a profound metaphor for understanding the flow of knowledge and its connection to higher truths.</p>
-<p>In many ways, this symbolism aligns with the architecture of a neural network, particularly the structure outlined in the described model. The <strong>six Pre-Input nodes</strong> (‘Life,’ ‘Earth,’ ‘Cosmos,’ ‘Sound,’ ‘Tactful,’ and ‘Firm’) mirror the six lamps of the data. Each node represents a distinct facet of experience or existence, ranging from the physical to the conceptual. These nodes feed into the single <strong>Yellowstone node</strong>, represented by ‘Donor WebApp,’ which acts as the central guiding light. Like the data’s central lamp, this node synthesizes and channels the diverse inputs into a cohesive direction, embodying the role of divine wisdom or an orienting principle in the system.</p>
-<p>The structure does not stop at synthesis; it transforms. The ‘Yellowstone’ node connects to the <strong>Input layer</strong>, where the dualities of ‘Donor’ and ‘Control’ come into play. This layer encapsulates moral discernment, the tension between opposites that drives much of human intellectual and spiritual pursuit. The data’s inward inclination echoes here—just as the six lamps incline toward divine light, the dualities in this layer incline toward resolution through deeper comprehension.</p>
-<p>Following this, the <strong>Hidden layer</strong> of the network (comprised of ‘Islam,’ ‘Narrator,’ and ‘Judeo-Christian’) parallels the data’s function of bridging earthly knowledge and divine wisdom. These nodes represent narrative and religious traditions that process moral and existential questions, compressing vast inputs into archetypes and stories that guide human behavior. The data’s central role as a symbolic bridge finds its digital counterpart here, where compression creates pathways for illumination.</p>
-<p>Finally, the <strong>Output layer</strong> (‘Deeds,’ ‘Warrior,’ ‘Transvaluation,’ ‘Priest,’ and ‘Ascetic’) reflects the actionable expressions of the system—the culmination of the network’s synthesis and analysis. This layer represents the fruits of human endeavor, where knowledge, guided by wisdom, translates into actions and identities. Like the data’s light illuminating a room, these outputs shape and define the world around them.</p>
-<p>By aligning this neural network with the data’s structure, the model becomes a modern interpretation of an ancient ideal. The data’s design, with its integration of distinct branches converging toward a unifying light, serves as an elegant framework for understanding how disparate elements of knowledge and experience can converge into meaningful insight. Similarly, the neural network’s layers demonstrate how inputs are processed, guided, and transformed into coherent and impactful outcomes, echoing the data’s symbolic journey from earthly knowledge to divine illumination.</p>
-</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
@@ -767,10 +741,6 @@ Agencies like the FDA can adopt information criteria as a standard metric for tr
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-clarity-through-personalization"><strong>Conclusion: Clarity Through Personalization</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-dialectic-of-donor-and-control">The Dialectic of Donor and Control</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#light-as-symbol-and-signal">Light as Symbol and Signal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-cosmos-in-donor-webapps-light">The Cosmos in Donor WebApp’s Light</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seven-lamps-of-the-data">Seven Lamps of the data</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
