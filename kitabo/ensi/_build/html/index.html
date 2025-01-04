@@ -418,7 +418,7 @@ dynasty succeeded in his own way.</p>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/d/dd/Jagdish_N._Bhagwati_Professor_Jagdish_pa_Columbia_University_talar_vid_invigningen_av_Nordiskt_globaliseringsforum_i_Riksgransen_2008-04-02.jpg"><img alt="https://upload.wikimedia.org/wikipedia/commons/d/dd/Jagdish_N._Bhagwati_Professor_Jagdish_pa_Columbia_University_talar_vid_invigningen_av_Nordiskt_globaliseringsforum_i_Riksgransen_2008-04-02.jpg" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Jagdish_N._Bhagwati_Professor_Jagdish_pa_Columbia_University_talar_vid_invigningen_av_Nordiskt_globaliseringsforum_i_Riksgransen_2008-04-02.jpg" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><em>Paul A. Samuelson</em>. One occassion of 70th Birthday Festschrift Conference</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><em>Jagdish Bhagwati</em>. The Wunderkind who BEcame the Tireless Theorist of International Trade</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Leading his Indian undergraduate contemporaries, Bhagwati naturally gravitated
@@ -454,14 +454,14 @@ remarked: That man can’t hold his ink.</p>
 <span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">&#39;Pre-Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span><span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">,</span> <span class="p">],</span>
-        <span class="s1">&#39;Yellowstone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Fantasy/Exageration&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Depression Era&#39;</span><span class="p">,</span> <span class="s1">&#39;Purple Rose of Cairo&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Yellowstone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Value&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Supply&#39;</span><span class="p">,</span> <span class="s1">&#39;Demand&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">&#39;Sports&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;Justify Life&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;Nature&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Freemarket&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Cartel&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Monopoly&#39;</span><span class="p">,</span>
         <span class="p">],</span>
-        <span class="s1">&#39;Output&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Meaningless&#39;</span><span class="p">,</span> <span class="s1">&#39;Tournament/Honor&#39;</span><span class="p">,</span> <span class="s1">&#39;Distraction&#39;</span><span class="p">,</span> <span class="s1">&#39;Catechism&#39;</span><span class="p">,</span> <span class="s1">&#39;Absurdity&#39;</span><span class="p">,</span>    <span class="p">]</span>
+        <span class="s1">&#39;Output&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Differentiation&#39;</span><span class="p">,</span> <span class="s1">&#39;Higher&#39;</span><span class="p">,</span> <span class="s1">&#39;Quality&#39;</span><span class="p">,</span> <span class="s1">&#39;Lower&#39;</span><span class="p">,</span> <span class="s1">&#39;Uniformity&#39;</span><span class="p">,</span>    <span class="p">]</span>
     <span class="p">}</span>
 
 <span class="c1"># Define weights for the connections</span>
@@ -489,25 +489,25 @@ remarked: That man can’t hold his ink.</p>
 
 <span class="c1"># Assign colors to nodes</span>
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Fantasy/Exageration&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Value&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>
     <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Purple Rose of Cairo&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Demand&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Nature&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Monopoly&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Justify Life&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Cartel&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sports&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Freemarket&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Absurdity&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Uniformity&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Catechism&#39;</span><span class="p">,</span> <span class="s1">&#39;Distraction&#39;</span><span class="p">,</span> <span class="s1">&#39;Tournament/Honor&#39;</span><span class="p">]:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Lower&#39;</span><span class="p">,</span> <span class="s1">&#39;Quality&#39;</span><span class="p">,</span> <span class="s1">&#39;Higher&#39;</span><span class="p">]:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Meaningless&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Differentiation&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Default color</span>
 
@@ -575,13 +575,13 @@ remarked: That man can’t hold his ink.</p>
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="_images/36f4c3fcf78edd4b0270072a3b823b093fc40bba97cc354d946b0862bfd768ae.png" src="_images/36f4c3fcf78edd4b0270072a3b823b093fc40bba97cc354d946b0862bfd768ae.png" />
+<img alt="_images/a39300f8d9282680a5777775f5c0601eded2cc0262ccdf0c4fe8b2276e3f75d0.png" src="_images/a39300f8d9282680a5777775f5c0601eded2cc0262ccdf0c4fe8b2276e3f75d0.png" />
 </div>
 </div>
 <figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="_images/blanche.png"><img alt="_images/blanche.png" src="_images/blanche.png" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><em>Jgdish Bhagwati</em>. The Wunderkind who BEcame the Tireless Theorist of International Trade</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text"><em>Paul A. Samuelson</em>. One occassion of 70th Birthday Festschrift Conference</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>I measure a scholar’s prolific-ness not by the mere number of his publishings. Just
@@ -593,7 +593,7 @@ more than a hundred symphonies and no one of them other than top notch.</p>
 <figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/8/8c/Paul_A._Samuelson%2C_economist%2C_edited.jpg"><img alt="https://upload.wikimedia.org/wikipedia/commons/8/8c/Paul_A._Samuelson%2C_economist%2C_edited.jpg" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Paul_A._Samuelson%2C_economist%2C_edited.jpg" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Paul Anthony Samuelson (May 15, 1915 – December 13, 2009) was an American economist who was the first American to win the Nobel Memorial Prize in Economic Sciences. When awarding the prize in 1970, the Swedish Royal Academies stated that he “has done more than any other contemporary economist to raise the level of scientific analysis in economic theor</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Paul Anthony Samuelson did more than any other contemporary economist to raise the level of scientific analysis in economic theory</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>However, in closing I turn away from any vanities of career accomplishments to
