@@ -420,12 +420,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="risk">
 <h1>Risk<a class="headerlink" href="#risk" title="Permalink to this heading">#</a></h1>
-<p>Proposal for Aligning Efforts on NIH Grant Projects</p>
-<p>Dear XXX,</p>
-<p>I’ve been reflecting on our overlapping research interests and the dynamics between the NIH grants you’re mentoring. While I initially perceived a potential conflict of interest, I believe there’s a unique opportunity here to transform it into a productive collaboration that benefits everyone involved.</p>
-<p>Would it make sense for us to explore a coordinated approach to authorship and contributions across these projects? For example, we could streamline co-authorship by clarifying roles—such as co-first or co-senior author arrangements—and aligning on shared goals. This approach could not only resolve competition but also enhance the visibility and impact of each project.</p>
-<p>Additionally, I’d like to propose integrating my app into the projects as a shared resource. This could serve as a unifying element, offering consistent data workflows and potentially opening up access to the datasets that have been challenging to work with independently. By pooling efforts, I’m confident we could increase productivity and ensure the best possible outcomes for both grants.</p>
-<p>Let me know if you think this is worth discussing further. I’m happy to propose a time to meet or adapt to your availability.</p>
+<p>Rosebud, Balalaika, Dude’s rug – items the “tie the story together”. They’re epilogue</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -441,14 +436,14 @@ document.write(`
 <span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
         <span class="s1">&#39;Pre-Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span><span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">,</span> <span class="p">],</span>
-        <span class="s1">&#39;Yellowstone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Unicameralism&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Commons&#39;</span><span class="p">,</span> <span class="s1">&#39;Lords&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Yellowstone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Epilogue&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Individual&#39;</span><span class="p">,</span> <span class="s1">&#39;Communal&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">&#39;Risk&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;Oxbridge&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;Peers&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Fears&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Rituals&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Bonds&#39;</span><span class="p">,</span>
         <span class="p">],</span>
-        <span class="s1">&#39;Output&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Anarchy&#39;</span><span class="p">,</span> <span class="s1">&#39;Discord&#39;</span><span class="p">,</span> <span class="s1">&#39;Honors&#39;</span><span class="p">,</span> <span class="s1">&#39;Unity&#39;</span><span class="p">,</span> <span class="s1">&#39;Monarchy&#39;</span><span class="p">,</span>    <span class="p">]</span>
+        <span class="s1">&#39;Output&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Art&#39;</span><span class="p">,</span> <span class="s1">&#39;Low-Skill&#39;</span><span class="p">,</span> <span class="s1">&#39;10k-hr-Rule&#39;</span><span class="p">,</span> <span class="s1">&#39;High-Skill&#39;</span><span class="p">,</span> <span class="s1">&#39;Religion&#39;</span><span class="p">,</span>    <span class="p">]</span>
     <span class="p">}</span>
 
 <span class="c1"># Define weights for the connections</span>
@@ -476,25 +471,25 @@ document.write(`
 
 <span class="c1"># Assign colors to nodes</span>
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Unicameralism&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Epilogue&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>
     <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Lords&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Communal&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Peers&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Bonds&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Oxbridge&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Rituals&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Risk&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Fears&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Monarchy&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Religion&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Unity&#39;</span><span class="p">,</span> <span class="s1">&#39;Honors&#39;</span><span class="p">,</span> <span class="s1">&#39;Discord&#39;</span><span class="p">]:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;High-Skill&#39;</span><span class="p">,</span> <span class="s1">&#39;10k-hr-Rule&#39;</span><span class="p">,</span> <span class="s1">&#39;Low-Skill&#39;</span><span class="p">]:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Anarchy&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Art&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
     <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Default color</span>
 
@@ -548,7 +543,7 @@ document.write(`
     <span class="p">)</span>
     <span class="n">edge_labels</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">get_edge_attributes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">)</span>
     <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">v</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">edge_labels</span><span class="o">.</span><span class="n">items</span><span class="p">()})</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Monarchy (Great Britain) vs. Anarchy (United Kingdom)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Let There Be Light: Genesis 1:3&quot;</span><span class="p">)</span>
     
     <span class="c1"># Save the figure to a file</span>
     <span class="c1"># plt.savefig(&quot;figures/logo.png&quot;, format=&quot;png&quot;)</span>
@@ -562,7 +557,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/86f8b708d751ba05daa3ec70c794f3ee1eb635e8b21c1880bc4c2f5466acfe7d.png" src="../../_images/86f8b708d751ba05daa3ec70c794f3ee1eb635e8b21c1880bc4c2f5466acfe7d.png" />
+<img alt="../../_images/8363292d3c41567ad06dd0ce84e30dbe02a1ddd27dea9e8b7d0bfbaaafba9aba.png" src="../../_images/8363292d3c41567ad06dd0ce84e30dbe02a1ddd27dea9e8b7d0bfbaaafba9aba.png" />
 </div>
 </div>
 <div class="cell tag_hide-input docutils container">
